@@ -77,6 +77,15 @@ header { background: color-mix(in srgb, var(--page) 92%, transparent) !important
 .auth-card { width: 100%; max-width: 460px; background: var(--surface); border: 1px solid var(--line); border-radius: 24px; padding: 36px; }
 .auth-card .eyebrow { margin-top: 40px; }
 .auth-card h1 { font-size: 34px; font-weight: 600; letter-spacing: -1px; margin-bottom: 8px; }
+.auth-notice { border: 1px solid; border-radius: 14px; padding: 12px 14px; font-size: 13px; line-height: 1.45; }
+.auth-notice strong { display: block; margin-bottom: 3px; font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+.auth-notice p { margin: 0; color: var(--ink); }
+.auth-notice-error { border-color: color-mix(in srgb, var(--danger) 48%, transparent); background: color-mix(in srgb, var(--danger) 13%, transparent); }
+.auth-notice-error strong { color: var(--danger); }
+.auth-notice-success { border-color: color-mix(in srgb, var(--success) 48%, transparent); background: color-mix(in srgb, var(--success) 13%, transparent); }
+.auth-notice-success strong { color: var(--success); }
+.auth-notice-warning { border-color: color-mix(in srgb, var(--warning) 54%, transparent); background: color-mix(in srgb, var(--warning) 15%, transparent); }
+.auth-notice-warning strong { color: var(--warning); }
 /* Semantic Tailwind colors resolve to the active theme. */
 @theme inline {
   --color-foreground: var(--ink);
